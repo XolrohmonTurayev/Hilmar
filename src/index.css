@@ -1,0 +1,96 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url(assets/fonts/Gilroy-Regular.woff);
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url(assets/fonts/Gilroy-Medium.woff);
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url(assets/fonts/Gilroy-SemiBold.woff);
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url(assets/fonts/Gilroy-Bold.woff);
+}
+
+:root {
+  --font1: "Gilroy-Regular";
+  --font2: "Gilroy-Medium";
+  --font3: "Gilroy-Semibold";
+  --font4: "Gilroy-Bold";
+  --primary: #ff8c54;
+  --secondary: #094148;
+  --secondary-light: #29a29e;
+  --white: #fff;
+  --body-color: #f4f6fb;
+  --text-main: #282830;
+  --text-color: #6a727a;
+  --footer-color: #ebeff8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site_logo {
+  width: 200px;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}

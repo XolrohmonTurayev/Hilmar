@@ -1,0 +1,117 @@
+.hghg {
+    position: relative;
+    background-color: var(--secondary);
+    padding-bottom: 50px;
+}
+
+.hghg .center-logo {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0.2;
+    width: 400px;
+    z-index: 1;
+}
+
+.hghg .circle {
+    position: absolute;
+    top: -350px;
+    right: -350px;
+    width: 700px;
+    height: 700px
+}
+
+.about-cont {
+    position: relative;
+    z-index: 5;
+    padding-block: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.about-info {
+    max-width: 670px;
+}
+
+.about-info .about-cont__text {
+    margin-bottom: 20px;
+}
+
+.about-info h2 {
+    margin-bottom: 50px;
+}
+
+.about-cont__text {
+    font: 400 18px var(--font1);
+    line-height: 21px;
+    color: var(--white);
+}
+
+.about-since {
+    justify-self: center;
+    max-width: 215px;
+}
+
+.about-since h2 {
+    font: 400 80px var(--font1);
+    line-height: 84px;
+    gap: 12px;
+    background: linear-gradient(90deg, rgba(55, 167, 164, 1) 0%, rgba(255, 140, 84, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-since h2 span {
+    font: 400 20px var(--font1);
+    color: var(--primary);
+}
+
+.about-since h6 {
+    font: 400 16px var(--font1);
+    color: var(--white);
+}
+
+@media (max-width: 1024px) {
+    .about-cont {
+        gap: 40px;
+    }
+
+    .about-info {
+        max-width: 450px;
+    }
+
+    .about-since {
+        justify-self: start;
+    }
+
+    .hghg .centered-logo {
+        width: 300px;
+    }
+
+    .hghg .circle {
+        width: 400px;
+        right: -200px;
+        top: -200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hghg .centered-logo {
+        display: none;
+    }
+
+    .about-cont {
+        flex-direction: column-reverse;
+        align-items: start;
+        margin-bottom: 40px;
+        padding-block: 70px 20px;
+    }
+
+    .about-info {
+        max-width: 600px;
+    }
+}

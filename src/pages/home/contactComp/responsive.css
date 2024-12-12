@@ -1,0 +1,61 @@
+@media (max-width: 1440px) {
+
+    .contact-form_item .contact__inputs,
+    .contact-form_item .tel__input {
+        width: 360px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .contact-form_item .contact__inputs,
+    .contact-form_item .tel__input {
+        width: 260px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact-cont {
+        flex-direction: column;
+    }
+
+    .contact-form_item .contact__inputs,
+    .contact-form_item .tel__input {
+        width: 320px;
+    }
+
+    .contact-img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding-block: 80px 40px;
+    }
+
+    .contact-form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-form_item .contact__inputs,
+    .contact-form_item .tel__input {
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .contact-form_item .contact__inputs,
+    .contact-form_item .tel__input {
+        width: 360px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .contact-form_item .contact__inputs,
+    .contact-form_item .tel__input {
+        width: 310px;
+    }
+}

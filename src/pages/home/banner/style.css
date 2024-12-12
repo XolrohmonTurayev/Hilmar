@@ -1,0 +1,123 @@
+.swiper {
+    width: 100%;
+}
+
+.hero-swiper {
+    margin-bottom: 100px;
+}
+
+.hero-section-wrapper {
+    position: relative;
+}
+
+.hero-section-slide_img {
+    width: 100%;
+    object-fit: cover;
+    transform-origin: center;
+    filter: brightness(85%);
+}
+
+.swiper-slide-active.hero-section-slide img {
+    animation: zooming 7s linear infinite;
+}
+
+@keyframes zooming {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.hero-sect-bottom-img {
+    position: absolute;
+    object-fit: cover;
+    bottom: -5px;
+    z-index: 99;
+}
+
+.banner-info {
+    position: absolute;
+    left: 12%;
+    top: 27%;
+    z-index: 9;
+    max-width: 485px;
+}
+
+.banner-info h1 {
+    font: 700 60px var(--font4);
+    line-height: 68px;
+    text-transform: uppercase;
+    color: #ffffff
+}
+
+.banner-info p {
+    font: 400 15px var(--font1);
+    color: #ffffffe6;
+    margin-block: 0 15px;
+}
+
+.banner-info a {
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--text-main);
+    font: 600 17px var(--font3);
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+.hero-swiper .swiper-button-prev,
+.hero-swiper .swiper-button-next {
+    position: absolute;
+    z-index: 100;
+    top: 45%;
+    background-color: var(--white);
+    color: var(--primary);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.hero-swiper .swiper-button-prev::after,
+.hero-swiper .swiper-button-next::after {
+    content: '\f061';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-swiper .swiper-button-prev {
+    left: 75%;
+}
+
+.hero-swiper .swiper-button-prev {
+    transform: rotate(-180deg);
+}
+
+.hero-swiper .swiper-button-next {
+    left: 92%;
+}
+
+.hero-swiper .swiper-pagination {
+    bottom: 52%;
+    left: 35%;
+
+}
+
+.hero-swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 7px;
+    height: 40px;
+    transform: skewX(-10deg);
+    border-radius: 0;
+}
+
+.hero-swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--primary);
+    height: 80px;
+    transition: 0.3s ease;
+}

@@ -1,0 +1,296 @@
+.header-wrapper {
+    position: relative;
+}
+
+.header-section {
+    position: fixed;
+    z-index: 120;
+    width: 100%;
+    top: 0;
+    padding-block: 20px 15px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.4s;
+}
+
+.is-sticky {
+    position: sticky;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 15%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 0%);
+    background-color: white !important;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    font: 600 16px var(--font3);
+}
+
+.header-nav div {
+    color: var(--white);
+}
+
+.header-nav-list {
+    gap: 32px;
+}
+
+.header-nav-list li {
+    list-style: none;
+}
+
+.header-nav-list a {
+    font: 600 16px var(--font3);
+    color: var(--white);
+}
+
+.header-contact-num {
+    font: 600 16px var(--font3);
+    color: var(--white);
+}
+
+.header-actions {
+    gap: 18px;
+}
+
+.lang-dropdown-wrapper {
+    position: relative;
+}
+
+.dropdown-btn {
+    border: none;
+    background-color: transparent;
+    font: 600 16px var(--font3);
+    color: var(--white);
+}
+
+.dropdown-btn img {
+    width: 25px;
+    margin-right: 6px;
+}
+
+.dropdown-btn i {
+    margin-left: 6px;
+    transition: 0.15s;
+    color: var(--primary);
+}
+
+.lang_icon {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown-wrapper div {
+    background-color: var(--white);
+    padding-block: 10px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.lang-dropdown-wrapper div button {
+    background-color: transparent;
+    border: none;
+    font: 600 16px var(--font3);
+}
+
+.dropdown {
+    position: absolute;
+    top: 120%;
+    z-index: 99;
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+    transition: opacity 0.3s ease, transform 0.2s ease, top 0.3s ease;
+}
+
+.dropdown-inactive {
+    top: 20%;
+    opacity: 0;
+    transform: translateY(-10px) rotateX(-90deg) ;
+    pointer-events: none;
+}
+
+.dropdown .content {
+    padding-inline: 16px;
+    padding-block: 5px;
+    width: 100%;
+    justify-content: start;
+}
+
+.dropdown .content:hover {
+    background-color: #cbcbcb;
+}
+
+.dropdown .content img {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.header-btn,
+.burgermenu-contact-btn {
+    font: 600 18px var(--font3);
+    color: var(--white);
+    padding: 12px 20px;
+    border: 1px solid grey;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+}
+
+.burgermenu-contact-btn {
+    font-size: 16px;
+    background-color: var(--primary);
+    border: none;
+    margin-bottom: 15px;
+}
+
+.burgermenu-contact-btn i {
+    margin-left: 8px;
+}
+
+.header-btn i {
+    margin-left: 8px;
+    color: var(--primary);
+    font-size: 26px;
+}
+
+.fixed-header-btn-icon {
+    color: var(--white) !important;
+}
+
+.fixed-header-btn {
+    background-color: var(--primary);
+    color: var(--white) !important;
+    border: none;
+}
+
+.burger-menu-btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--primary);
+    font-size: 20px;
+    color: var(--white);
+    display: none !important; 
+}
+
+.burger-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(16px) brightness(70%);
+    z-index: 9999;
+    display: none;
+}
+
+.burgerbg-active {
+    display: block;
+}
+
+.burgermenu-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    color: var(--white);
+    background-color: var(--primary);
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.burger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 40px 25px 15px;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--white);
+    z-index: 9999;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.burgermenu-active {
+    transition: transform 0.3s ease-out;
+    transform: translateX(0);
+}
+
+.burger-menu-list {
+    list-style: none;
+}
+
+.burger-menu-logo-wrapper {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.burger-menu-logo {
+    display: block;
+    width: 180px;
+}
+
+.burger-menu-logo img {
+    width: 100%;
+}
+
+.burger-menu-list-item {
+    display: block;
+    font-family: var(--font2);
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.burgermenu-lang-btns {
+    display: none;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.burgermenu-lang-btns .content {
+    border: none;
+    background-color: var(--primary);
+    padding-block: 6px;
+    width: 100% !important;
+    color: var(--white);
+    font: 600 16px var(--font2);
+}
+
+.burgermenu-lang-btns .content img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.burgermenu-lang-btns button:hover {
+    background-color: #ffb38e;
+}
+
+.burgermenu-contact-btn {
+    display: none !important;
+}
+
+.burgermenu-tel {
+    font: 600 16px var(--font2);
+    color: var(--text-main);
+}
+
+.burgermenu-tel i {
+    font-size: 14px;
+    margin-right: 6px;
+}

@@ -1,0 +1,38 @@
+@media (max-width: 1440px) {
+    .header-nav {
+        display: none !important;
+    }
+
+    .burger-menu-btn {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-btn {
+        padding: 8px 18px;
+        font-size: 16px;
+    }
+
+    .header-contact-num {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .lang-dropdown-wrapper {
+        display: none;
+    }
+
+    .header-btn {
+        display: none !important;
+    }
+
+    .burgermenu-lang-btns {
+        display: flex !important;
+    }
+
+    .burgermenu-contact-btn {
+        display: flex !important;
+    }
+}

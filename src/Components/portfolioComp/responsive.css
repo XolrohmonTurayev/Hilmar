@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .flex-item {
+        max-width: 50%;
+    }
+}
+@media (max-width: 550px) {
+    .flex-item {
+        max-width: 100%;
+    }
+}

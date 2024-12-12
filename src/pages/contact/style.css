@@ -1,0 +1,148 @@
+.contact-content {
+    display: flex;
+    margin-block: 48px;
+}
+
+.contact-info-section {
+    width: 50%;
+}
+
+.information_item>div:first-child,
+.information_item2>div:first-child,
+.information_item3>div:first-child {
+    min-width: 230px;
+    max-width: 230px;
+    margin-bottom: 48px;
+}
+
+.information_item {
+    display: flex;
+}
+
+.contact-page-cont_item {
+    margin-bottom: 20px;
+}
+
+.contact-page-cont_item i {
+    display: block;
+    font: 500 18px var(--font2);
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.contact-page-cont_item div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    row-gap: 8px;
+}
+
+.contact-page-cont_item div a {
+    font: 700 18px var(--font4);
+    color: var(--secondary-light);
+}
+
+.information_item2 {
+    display: flex;
+    align-items: center;
+}
+
+.information_item2 div a {
+    font: 600 28px var(--font3);
+    color: var(--secondary-light);
+}
+
+.information_item3 {
+    display: flex;
+}
+
+.information_item3 div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 16px;
+}
+
+.information_item3 div a i {
+    font-size: 32px;
+    color: var(--primary);
+}
+
+.information_item3 div a span {
+    font: 600 28px var(--font3);
+    color: var(--secondary-light);
+}
+
+.contact-page-map {
+    width: 50%;
+    margin-bottom: 48px;
+}
+
+.contact-map-wrapper {
+    width: 100%;
+    height: 100%;
+    margin-top: 24px;
+}
+
+.contact-map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+}
+
+@media (max-width: 1280px) {
+    .contact-content {
+        gap: 40px;
+    }
+
+    .information_item>div:first-child,
+    .information_item2>div:first-child,
+    .information_item3>div:first-child {
+        min-width: 195px;
+        max-width: 195px;
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-info-section,
+    .contact-page-map {
+        width: 100%;
+    }
+
+    .contact-map-wrapper {
+        height: 500px;
+    }
+}
+
+@media (max-width: 571px) {
+    .information_item>div:first-child,
+    .information_item2>div:first-child,
+    .information_item3>div:first-child {
+        min-width: 140px;
+        max-width: 140px;
+        margin-bottom: 48px;
+    }
+
+    .information_item2 div:nth-child(2) a {
+        font-size: 24px;
+    }
+
+    .information_item3 div:nth-child(2) a i {
+        font-size: 22px;
+        margin-right: 6px;
+    }
+
+    .information_item3 div:nth-child(2) a span {
+        font-size: 22px;
+    }
+
+    .contact-map-wrapper {
+        height: 300px;
+    }
+}

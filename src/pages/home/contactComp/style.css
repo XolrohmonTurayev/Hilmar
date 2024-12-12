@@ -1,0 +1,99 @@
+.contact-section {
+    padding-block: 80px;
+}
+
+.contact-cont {
+    background-color: var(--white);
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 32px;
+}
+
+.contact-form_item label,
+.contact-massage label {
+    font: 600 18px var(--font3);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form_item label sup,
+.contact-massage label sup {
+    font-size: 10px;
+    color: #eb3030;
+}
+
+.contact-form_item .contact__inputs,
+.contact-form_item .tel__input {
+    display: block;
+    height: 48px;
+    border: 1px solid #28283026;
+    border-radius: 16px;
+    padding: 0 16px;
+    font: 500 1rem var(--font2);
+    width: 420px;
+}
+
+.contact-form_item .contact__inputs:focus,
+.contact-form_item .tel__input:focus,
+.contact-massage textarea:focus {
+    outline: none;
+}
+
+.contact-form_item .tel__input {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.contact-form_item .tel__input input:focus,
+.contact-form_item .tel__input input:focus-visible {
+    outline: none;
+}
+
+.contact-massage {
+    margin-top: 20px;
+}
+
+.contact-form_item .tel__input input {
+    margin-left: 3px;
+    font: 500 1rem var(--font2);
+    border: none;
+}
+
+.contact-massage textarea {
+    border: 1px solid #28283026;
+    border-radius: 16px;
+    resize: none;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    font: 500 1rem var(--font2);
+}
+
+.contact__form button {
+    border: none;
+    border-radius: 48px;
+    padding: 0 20px;
+    height: 48px;
+    background-color: var(--primary);
+    color: var(--white);
+    font: 500 18px var(--font2);
+}
+
+.contact-img {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-img img {
+    width: 100%;
+}

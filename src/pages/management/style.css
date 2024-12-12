@@ -1,0 +1,84 @@
+.management-section {
+    margin: 48px 0 90px;
+}
+
+.management-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.management-info {
+    max-width: 750px;
+    margin-top: 24px;
+}
+
+.management-info p {
+    font: 400 18px var(--font1);
+    color: var(--text-main);
+}
+
+.management-cont .flex-1 img {
+    width: 260px;
+}
+
+.employees-section {
+    margin-block: 48px;
+}
+
+.employees-flex_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    align-items: end;
+    gap: 16px;
+    margin-block: 48px 80px;
+}
+
+.employee-card {
+    width: 100%;
+}
+
+.boss-card img,
+.employee-card img {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.employee-card-info {
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    padding-block: 20px 14px;
+}
+
+.employee-card-info h3 {
+    font: 700 22px var(--font4);
+    color: var(--text-main);
+}
+
+.employee-card-info p {
+    font: 400 16px var(--font1);
+}
+
+
+
+@media (max-width: 1280px) {
+    .management-cont {
+        flex-direction: column;
+    }
+
+    .management-info {
+        max-width: none;
+
+    }
+
+    .management-cont .content {
+        padding-block: 80px;
+    }
+
+    .management-cont .content img {
+        width: 300px;
+    }
+}

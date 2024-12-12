@@ -1,0 +1,84 @@
+.projects-section {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.projects-section-title-wrapper {
+    display: inline-block;
+    padding: 0 8px;
+    margin-bottom: 30px;
+}
+
+.flex-content {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    margin: 0 auto;
+}
+
+.flex-item {
+    max-width: 33.333%;
+    padding: 0 8px;
+}
+
+.flex-item:hover h3 {
+    color: var(--primary);
+}
+
+.flex-item div {
+    background-color: var(--white);
+}
+
+.flex-item img {
+    width: 100%;
+}
+
+.flex-item-info {
+    padding: 20px;
+}
+
+.flex-item-info h3 {
+    font: 700 18px var(--font4);
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.addres-box {
+    width: max-content;
+    gap: 6px;
+}
+
+.addres-box .content {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: var(--secondary-light);
+    color: var(--white);
+}
+
+.addres-box span {
+    font: 500 16px var(--font2);
+    color: var(--text-color);
+}
+
+.pagination__box {
+    margin-top: 40px;
+    gap: 8px;
+}
+
+.pagination-button {
+    border: 1px solid #d4d2d2;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: var(--body-color);
+    color: var(--secondary);
+    font: 400 18px var(--font1);
+}
+
+.pagination-button.active {
+    border: 2px solid var(--secondary-light);
+    font-weight: 600;
+    font-size: 22px;
+}

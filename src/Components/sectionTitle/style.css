@@ -1,0 +1,16 @@
+.section-title {
+    font: 600 36px var(--font3);
+    letter-spacing: 0.6px;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 570px) {
+    .section-title {
+        font-size: 24px;
+    }
+}
