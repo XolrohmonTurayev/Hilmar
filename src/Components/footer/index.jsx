@@ -77,7 +77,7 @@ const Footer = () => {
                             <i className='fa-brands fa-linkedin'></i>
                         </Link>
                     </div>
-                    <Link to={"limon.uz"}>
+                    <Link to={"https://www.limon.uz"} target='_blank'>
                         <div className='footer-ad content'>
                             <h2>{t("sozlovchi")}:</h2>
                             <img src={limonLogo} alt='Logo of the Limon Digital Agency' />
