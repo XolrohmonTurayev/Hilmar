@@ -12,7 +12,7 @@ const ProjectsMap = () => {
             <div className='projects-map-wrapper'>
                 <div className='projects__map__header'>
                     <SectionTitle>{t("map-section-title")}</SectionTitle>
-                    <Link className='content'>
+                    <Link to={"/projects"} className='content'>
                         <span>{t("view-all")}</span>
                         <i className='fa-solid fa-right-long'></i>
                     </Link>
